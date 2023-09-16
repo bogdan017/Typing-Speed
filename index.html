@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+        <link rel = "stylesheet" href = "typing.css">
+    </head>
+    <body>
+        <h1 class = "heading">Typing speed</h1>
+        <div class = "container">
+            <div class = "time">
+                <div class = "inp-time">60 s</div>
+            </div>
+            <div class = "wpm">
+                <div class = "inp-wpm">0</div>
+                <div class = "text">words/min</div>
+            </div>
+            <div class ="cpm">
+                <div class = "inp-cpm">0</div>
+                <div class = "text">chars/min</div>
+            </div>
+            <div class = "acc">
+                <div class = "inp-acc">100</div>
+                <div class = "text">% accuracy</div>
+            </div>
+            <div class = "error">
+                <div class = "inp-error">0</div>
+                <div class = "text">errors</div>
+            </div>
+        </div>
+        <div class = "words">Start the game by clicking on the area below</div>
+        <textarea class = "input-text" placeholder="start typing" oninput="processWord()" onfocus = "game()"></textarea>
+        <button class = "restart" onclick="restartGame()">Restart</button>
+        <script src = "typing.js"></script>
+    </body>
+</html>
